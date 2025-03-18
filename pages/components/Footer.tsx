@@ -6,7 +6,7 @@ import youtube from "../../public/youtube.png";
 import email from "../../public/email.png";
 
 const Footer = () => {
-  const recipientEmail = "reynoso.123132@gmail.com";
+  const recipientEmail = "davidmeinard.reynoso@gmail.com";
   return (
     <div className={main.footerContainer}>
       <div className={main.footerCenter}>
@@ -43,7 +43,7 @@ const Footer = () => {
           </a>
           <a
             className={main.linkStyle}
-            href={`gmailto:${recipientEmail}`}
+            href={`mailto:${recipientEmail}`}
             rel="noopener noreferrer"
           >
             <Image className={main.socials} src={email} alt="email"></Image>
