@@ -60,6 +60,7 @@
     position: absolute;
     width: 100%;
     height: auto;
+    filter: brightness(0.4);
     transform: rotateX(180deg);
 }
 .heroTextmain{
