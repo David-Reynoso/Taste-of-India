@@ -1,0 +1,337 @@
+/* Whole page container */
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* HEADER */
+.navbar{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    border-bottom: 5px #B0D9B1 solid;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    user-select: none;
+}
+.navbarLogo{
+    height: 85%;
+    width: auto;
+    margin-left: 30px;
+}
+.navbarTitle{
+    color: #618264;
+    font-size: 25px;
+    font-family: serif;
+    letter-spacing: 5px;
+    margin-left: 60px;
+}
+.navbarSearch{
+    margin-right: 30px;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: #B0D9B1;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+/* HERO */
+.heroContainer{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    text-align: center;
+}
+.heroImage{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transform: rotateX(180deg);
+}
+.heroTextmain{
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 4;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+/* BODY */
+.bodyContainer{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.recipeDivs{
+    user-select: none;
+    cursor: pointer;
+    margin: 15px 10px 15px 10px;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #e1ffe3;
+    transition: .3s;
+}
+.recipeDivs:hover{
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.24);
+    background-color: #c1ecc4;
+    transform: scale(1.02);
+    .recipeThumbnailimage{
+        transform: scale(1.3);
+        transition: .3s ease-out;
+    }
+}
+.recipeThumbnailholder{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipeThumbnailimage{
+    width: 100%;
+    height: auto;
+    filter: brightness(1.2);
+    filter: contrast(1.1);
+}
+.thumbnailContent{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recipeCategory{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100%;
+    color: #618264;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
+.recipeName{
+    margin-top: 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* DETAILS */
+.detailsContainer{
+    width: 100%;
+    height: auto;
+}
+.homeButton{
+    cursor: pointer;
+    position: fixed;
+    background-color: #000000;
+    margin: -5px 0px 0px 20px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    z-index: 4;
+}
+.homeButton:hover{
+    background-color: #ffffff;
+    .buttonIcon{
+        filter: invert(0%);
+    }
+}
+.buttonIcon{
+    height: 65%;
+    width: auto;
+    transition: .3s;
+    filter: invert(100%);
+}
+.detailsUpper{
+    margin-top: 20px;
+    background-color: #D0E7D2;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.detailsImageholder{
+    background-color: #618264;
+    border-radius: 20px;
+    width: 50%;
+    height: 90%;
+    overflow: hidden;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px 1px black;
+}
+.detailsImage{
+    width: 100%;
+    height: auto;
+    filter: brightness(1.2);
+    filter: contrast(1.1);
+}
+.detailsRecipedescription{
+    margin-left: 30px;
+    width: 45%;
+    height: 100%;
+}
+.detailsRecipetitle{
+    margin-top: 150px;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.detailsRecipecategory{
+    letter-spacing: 3px;
+    margin-top: -10px;
+    width: 100%;
+    text-align: center;
+    color: #618264;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
+.detailsRecipeingredients{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.detailsInstruction{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+    background-color: #D0E7D2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detailsRecipeinstructiontitle{
+    margin-top: 20px;
+    color: #618264;
+}
+.detailsRecipeinstruction{
+    margin-top: 0px;
+    width: 95%;
+    font-size: 20px;
+}
+.footerContainer{
+    width: 100%;
+    height: 125px;
+    background-color: #B0D9B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerCenter{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerUpper{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerLower{
+    width: 100%;
+    height: 50%;
+    border-top: 2px #79AC78 solid;
+    text-align: center;
+}
+.socials{
+    cursor: pointer;
+    height: 80%;
+    margin: 5px 25px 0px 25px;
+    width: auto;
+    border-radius: 50%;
+    transition: .3s;
+}
+.socials:hover{
+    filter: invert(100%);
+}
+.linkStyle{
+    height: 100%;
+    width: auto;
+}
+
+
+/* @MDEIA SCREENS */
+@media (max-width: 530px){
+    .homeButton{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width: 700px){
+    .heroContainer{
+        display: none;
+    }
+    .bodyContainer{
+        margin-top: 50px;
+    }
+    .navbarLogo{
+        display: none;
+    }
+    .navbarTitle{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 1024px){
+    .heroTextmain{
+        font-size: 30px;
+    }
+    .detailsUpper{
+        flex-direction: column;
+    }
+    .detailsRecipetitle{
+        margin-top: 80px;
+    }
+    .detailsUpper{
+        height: 800px;
+    }
+    .detailsImageholder
+    {
+        margin-top: 40px;
+        width: 80%;
+    }
+    .detailsRecipedescription{
+        width: 80%;
+    }
+}
+@media (min-width: 1920px){
+    .recipeDivs{
+        width: 350px;
+    }
+}
